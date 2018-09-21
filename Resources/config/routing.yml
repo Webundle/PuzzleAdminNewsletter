@@ -1,0 +1,11 @@
+group:
+    resource: '@PuzzleAdminNewsletterBundle/Resources/config/routing/group.yml'
+    prefix: '/groups'
+
+subscriber:
+    resource: '@PuzzleAdminNewsletterBundle/Resources/config/routing/subscriber.yml'
+    prefix: '/subscribers'
+
+template:
+    resource: '@PuzzleAdminNewsletterBundle/Resources/config/routing/template.yml'
+    prefix: '/templates'

@@ -1,0 +1,30 @@
+#Expertise
+newsletter:
+    base: 'Newsletter'
+    icon: 'icon-envelop3'
+    template:
+        base: 'Modèles'
+        name: 'Nom'
+        eventName: 'Déclencheur'
+        role: 'Gérer la newsletter'
+        list: 'Liste des modèles'
+        create: 'Ajouter un nouveau modèle'
+        update: 'Modifier le modèle'
+        delete: 'Etes-vous sûr de vouloir supprimer le modèle'
+    group:
+        base: 'Groupes'
+        name: 'Nom'
+        description: 'Description'
+        list: 'Liste des groupes'
+        show: 'Détails du groupe'
+        create: 'Ajouter un nouveau groupe'
+        update: 'Modifier le groupe'
+        delete: 'Etes-vous sûr de vouloir supprimer le groupe'
+    subscriber:
+        base: 'Abonnés'
+        name: 'Nom'
+        email: 'E-mail'
+        list: 'Liste des abonnés'
+        create: 'Ajouter un nouvel abonné'
+        update: 'Mettre à jour l''abonné'
+        delete: 'Etes-vous sûr de vouloir supprimer l''abonné'

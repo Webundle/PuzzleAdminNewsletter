@@ -1,0 +1,4 @@
+services:
+#    puzzle_admin_newsletter.example:
+#        class: Puzzle\Admin\NewsletterBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

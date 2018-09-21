@@ -1,0 +1,16 @@
+{% trans_default_domain 'admin' %}
+
+<div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header bg-info">
+            <h3>{{ "newsletter.subscriber.update"|trans }} {{ subscriber.email|capitalize }}</h3>
+        </div>
+        {% include 'PuzzleAdminNewsletterBundle:Subscriber:form.html.twig' with { 'form' : form, 'subscriber' : subscriber } %}
+    </div>
+</div>
+<script>
+    // Default initialization
+    $('.select').select2({
+        minimumResultsForSearch: Infinity
+    });
+</script>

@@ -1,0 +1,21 @@
+{% trans_default_domain 'admin' %}
+
+{% if app.user.hasRole('ROLE_NEWSLETTER') or app.user.hasRole('ROLE_ADMIN')  %}
+    <li {% if active == "newsletter" %}class="active"{% endif %}>
+        <a href="#">
+            <i class="{{ "newsletter.icon"|trans }}"></i>
+            <span>{{ "newsletter.base"|trans }}</span>
+        </a>
+        <ul>
+            <li {% if subactive == "admin_newsletter_subscriber_list" %}class="active"{% endif %}>
+            <a href="{{ url('admin_newsletter_subscriber_list') }}">{{ "newsletter.subscriber.base"|trans }}</a>
+            </li>
+            <li {% if subactive == "admin_newsletter_group_list" %}class="active"{% endif %}>
+            <a href="{{ url('admin_newsletter_group_list') }}">{{ "newsletter.group.base"|trans }}</a>
+            </li>
+            <li {% if subactive == "admin_newsletter_template_list" %}class="active"{% endif %}>
+            <a href="{{ url('admin_newsletter_template_list') }}">{{ "newsletter.template.base"|trans }}</a>
+            </li>
+        </ul>
+    </li>
+{% endif %}

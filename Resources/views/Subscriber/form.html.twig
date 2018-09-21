@@ -1,0 +1,26 @@
+{% trans_default_domain 'admin' %}
+	
+{{ form_start(form) }}
+    <div class="modal-body">
+        <div class="margin-medium-bottom">
+            <div class="form-group">
+                {{ form_label(form.email) }}
+                {{ form_widget(form.email) }}
+            </div>
+            <div class="form-group">
+                {{ form_label(form.name) }}
+                {{ form_widget(form.name) }}
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer text-right">
+        <button class="btn btn-default" data-dismiss="modal">
+        	<i class="icon-cross"></i>
+        	{{ "button.close"|trans }}
+        </button>
+	    <button class="btn btn-success">
+	        {{ subscriber is defined ? 'button.update'|trans : 'button.add'|trans }}
+	        <i class="icon-checkmark2"></i>
+	    </button>
+    </div>
+{{ form_end(form) }}

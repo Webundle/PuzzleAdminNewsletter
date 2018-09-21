@@ -1,0 +1,16 @@
+# Subscriber
+admin_newsletter_subscriber_list:
+    path:     /list
+    defaults: { _controller: 'PuzzleAdminNewsletterBundle:Subscriber:list' }
+
+admin_newsletter_subscriber_create:
+    path:     /create
+    defaults: { _controller: 'PuzzleAdminNewsletterBundle:Subscriber:create' }
+
+admin_newsletter_subscriber_update:
+    path:     /{id}/update
+    defaults: { _controller: 'PuzzleAdminNewsletterBundle:Subscriber:update' }
+    
+admin_newsletter_subscriber_delete:
+    path:     /{id}/delete
+    defaults: { _controller: 'PuzzleAdminNewsletterBundle:Subscriber:delete' }

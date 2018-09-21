@@ -1,0 +1,20 @@
+# Group
+admin_newsletter_group_list:
+    path:     /list
+    defaults: { _controller: 'PuzzleAdminNewsletterBundle:Group:list' }
+
+admin_newsletter_group_create:
+    path:     /create
+    defaults: { _controller: 'PuzzleAdminNewsletterBundle:Group:create' }
+
+admin_newsletter_group_show:
+    path:     /{id}
+    defaults: { _controller: 'PuzzleAdminNewsletterBundle:Group:show' }
+
+admin_newsletter_group_update:
+    path:     /{id}/update
+    defaults: { _controller: 'PuzzleAdminNewsletterBundle:Group:update' }
+    
+admin_newsletter_group_delete:
+    path:     /{id}/delete
+    defaults: { _controller: 'PuzzleAdminNewsletterBundle:Group:delete' }

@@ -1,0 +1,24 @@
+admin_newsletter_template_list:
+    path:     /list
+    defaults: { _controller: 'PuzzleAdminNewsletterBundle:Template:list' }
+    methods:  [GET]
+
+admin_newsletter_template_create:
+    path:     /create
+    defaults: { _controller: 'PuzzleAdminNewsletterBundle:Template:create' }
+    methods:  [GET, POST]
+
+admin_newsletter_template_show:
+    path:     /{id}/show
+    defaults: { _controller: 'PuzzleAdminNewsletterBundle:Template:show' }
+    methods:  [GET]
+
+admin_newsletter_template_update:
+    path:     /{id}/update
+    defaults: { _controller: 'PuzzleAdminNewsletterBundle:Template:update' }
+    methods:  [GET, POST]
+
+admin_newsletter_template_delete:
+    path:     /{id}/delete
+    defaults: { _controller: 'PuzzleAdminNewsletterBundle:Template:delete' }
+

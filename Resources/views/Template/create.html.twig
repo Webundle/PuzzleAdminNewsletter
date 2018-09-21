@@ -1,0 +1,19 @@
+{% trans_default_domain 'admin' %}
+
+{% extends 'PuzzleAdminNewsletterBundle::layout_editor.html.twig' %}
+
+{% block title %}{{ parent() }} - {{ "newsletter.template.create"|trans }} {% endblock %}
+
+{% block mainsubtitle %} - {{ "newsletter.template.base"|trans }} {% endblock %}
+
+{% block breadcrumb %}
+    {{ parent() }}
+    <li><a href="{{ url('admin_newsletter_template_list') }}">{{ "newsletter.template.list"|trans }}</a></li>
+    <li class="active">{{ "newsletter.template.create"|trans }}</li>
+{% endblock %}
+
+{% block mainpage %}
+    <div class="col-md-10 col-md-offset-1">
+        {% include 'PuzzleAdminNewsletterBundle:Template:form.html.twig' with { ' form' : form } %}
+    </div>
+{% endblock %}
