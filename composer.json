@@ -30,11 +30,10 @@
         "webundle/puzzle-api-newsletter": "^1.0"
     },
     "autoload" : {
-        "psr-0" : {
-            "Webundle\\Puzzle\\Admin\\NewsletterBundle" : ""
+        "psr-4" : {
+            "Puzzle\\Admin\\NewsletterBundle\\" : ""
         }
     },
-    "target-dir" : "Webundle/Puzzle/Admin/NewsletterBundle",
     "extra" : {
         "branch-alias" : {
             "dev-master" : "1.0-dev"
